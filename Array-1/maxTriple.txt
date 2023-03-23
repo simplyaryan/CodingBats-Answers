@@ -1,0 +1,17 @@
+public int maxTriple(int[] nums) {
+  int largest;
+  int a =nums[0];
+  int b =nums[nums.length/2];
+  int c =nums[nums.length-1];
+  
+  if(a>b&&a>c){
+    largest = a;
+  }
+  else if(b>c&&b>a){
+    largest = b;
+  }
+  else{
+    largest =c;
+  }
+  return largest;
+}

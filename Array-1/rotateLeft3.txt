@@ -1,0 +1,7 @@
+public int[] rotateLeft3(int[] nums) {
+  int[] lol = new int[3];
+  lol[0]=nums[1];
+  lol[1]=nums[2];
+  lol[2]=nums[0];
+  return lol;
+}

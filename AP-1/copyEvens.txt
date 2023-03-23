@@ -1,0 +1,19 @@
+public int[] copyEvens(int[] nums, int count) {
+  int[] lol = new int[100];
+  int temp = 0;
+  for(int i = 0;i<=nums.length-1;i++){
+    if(nums[i]%2 == 0){
+      lol[temp] = nums[i];
+      temp++;
+    }
+  }
+  int[] lol1 = new int[count];
+  int temp1 = 0;
+  for(int i = 0;i<count;i++){
+    lol1[temp1] = lol[i];
+    temp1++;
+  }
+  
+  
+  return lol1;
+}

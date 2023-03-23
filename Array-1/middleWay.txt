@@ -1,0 +1,11 @@
+public int[] middleWay(int[] a, int[] b) {
+  int middle1 = (a.length-1)/2;
+  int middle2 = (b.length-1)/2;
+  int[] lol =new int[2];
+  
+  lol[0] = a[middle1];
+  lol[1] = b[middle2];
+  
+  return lol;
+  
+}

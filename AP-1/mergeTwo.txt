@@ -1,0 +1,64 @@
+public String[] mergeTwo(String[] a, String[] b, int n) {
+  String[] result = remove2(Alpha(duplicates(Alpha(mergeArray(a, b)))));
+  String[] pls = new String[n];
+  for(int i =0 ;i<n;i++){
+    pls[i] = result[i];
+  }
+  
+  return pls;
+} 
+ public  String[] duplicates(String [] y){
+        for(int i = 0;i<=y.length-2;i++){
+            if(y[i].equals(y[i+1])){
+                y[i+1] = "";
+       
+            }
+        }
+        return y;
+     }
+     
+  public  String[] Alpha(String[] p) {
+        for(int i = 0;i<p.length-1;i++){
+            int intital =i;
+            for(int j = i+1;j<p.length;j++){
+                if(p[intital].compareTo(p[j])>0){
+                    intital = j;
+                }
+            }
+            String temp = p[i];
+            p[i] = p[intital];
+            p[intital] = temp;
+        }
+      return p;
+    }
+    
+    public  String[] mergeArray(String[] x, String[] y) {
+        String[] merge = new String[x.length + y.length];
+        int temp = 0;
+        for (int i = 0; i <= x.length - 1; i++) {
+            merge[temp] = x[i];
+            temp++;
+        }
+        for (int i = 0; i <= y.length - 1; i++) {
+            merge[temp] = y[i];
+            temp++;
+        }
+        return merge;
+    }
+public  String[] remove2(String[] y) {
+
+        String[] result = new String[y.length];
+        int temp = 0;
+        
+        for (int i = 0; i <= y.length - 1; i++) {
+            if (y[i].equals("")) {
+     
+            } else {
+                result[temp] = y[i];
+                temp++;
+            }
+        }
+
+        return result;
+    }
+

@@ -1,0 +1,7 @@
+public int[] makeLast(int[] nums) {
+  int[] lol =new int[nums.length*2] ;
+  int index = (nums.length*2)-1;
+  
+  lol[index] = nums[nums.length-1];
+  return lol;
+}

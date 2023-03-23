@@ -1,0 +1,9 @@
+public int[] makeEnds(int[] nums) {
+  int a = nums[0];
+  int b = nums[nums.length-1];
+  int[] lol = new int[2];
+  lol[0] = a;
+  lol[1] = b;
+  
+  return lol;
+}

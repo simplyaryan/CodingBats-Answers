@@ -1,0 +1,15 @@
+public List wordsWithoutList(String[] words, int len) {
+  ArrayList<String> lol = new ArrayList<String>();
+  boolean lol1 = false;
+  int temp = 0;
+  for(int i = 0 ;i<=words.length-1;i++){
+    lol1 = true;
+    if(words[i].length()==len){
+      lol1 = false;
+    }
+    if(lol1){
+      lol.add(words[i]);
+    }
+  }
+  return lol;
+}

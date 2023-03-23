@@ -1,0 +1,9 @@
+public String[] wordsFront(String[] words, int n) {
+  String[] lol = new String[n];
+  int temp=0;
+  for(int i= 0;i<n;i++){
+    lol[temp] = words[i];
+    temp++;
+  }
+  return lol;
+}

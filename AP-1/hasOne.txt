@@ -1,0 +1,11 @@
+public boolean hasOne(int n) {
+  int a ;
+  while(n>0){
+    a = n%10;
+    if(a==1){
+      return true;
+    }
+    n = n/10;
+  }
+  return false;
+}

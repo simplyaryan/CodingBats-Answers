@@ -1,0 +1,4 @@
+public boolean more20(int n) {
+  int x = n/10;
+  return x%2==0&&(n%10==1||n%10==2);
+}

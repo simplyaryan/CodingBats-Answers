@@ -1,0 +1,24 @@
+public int scoresSpecial(int[] a, int[] b) {
+   int sum = 0;
+    
+  sum = findGreatest(a)+findGreatest(b);
+  return sum ;
+}
+public int findGreatest(int[] array){
+   int largest =0;
+   if(array.length==0){
+     return 0 ;
+   }
+   for(int i = 0;i<=array.length-1;i++){
+     if(array[i]%10==0){
+       largest = array[i];
+     }
+   }
+   
+    for(int i = 0;i<=array.length-1;i++){
+      if(array[i]>largest&&array[i]%10==0){
+        largest = array[i];
+      }
+    }
+    return largest;
+  }

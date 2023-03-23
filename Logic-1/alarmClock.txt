@@ -1,0 +1,8 @@
+public String alarmClock(int day, boolean vacation) {
+boolean weekday = day < 6 && day > 0;
+if (weekday && !vacation)
+return "7:00";
+else if ((weekday && vacation) || (!weekday && !vacation))
+return "10:00";
+return "off";
+}

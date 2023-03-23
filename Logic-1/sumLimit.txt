@@ -1,0 +1,15 @@
+public int sumLimit(int a, int b) {
+  String x1="!"+a;
+  String y1="!"+b;
+  int x=x1.length()-1;
+  int y=y1.length()-1;
+  int sum = a+b;
+  String sum1="!"+sum;
+  int sumlength=sum1.length()-1;
+  if(sumlength>x){
+    return a;
+  }
+  else{
+    return sum;
+  }
+}

@@ -1,0 +1,20 @@
+public String[] wordsWithout(String[] words, String target) {
+  String[] result = new String[4];
+  int temp= 0;
+  for(int i =0; i<=words.length-1;i++){
+    if(!words[i].equals(target)){
+      result[temp] = words[i];
+      temp++;
+    }
+    
+    
+  }
+  String[] lol = new String[temp];
+  int temp1 = 0;
+  for(int i =0;i<temp;i++){
+    lol[temp1]=result[i];
+    temp1++;
+  }
+  
+  return lol;
+}

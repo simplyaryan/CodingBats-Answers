@@ -1,0 +1,12 @@
+public String extraFront(String str) {
+  String finalword;
+  if (str.length()==2 || str.length()==1 || str.length()==0){
+    finalword = str+ str+str;
+    return finalword;
+  }
+  else{
+    finalword = str.substring(0,2)+str.substring(0,2)+str.substring(0,2);
+    return finalword;
+  }
+  
+}

@@ -1,0 +1,13 @@
+public boolean scoresIncreasing(int[] scores) {
+  boolean lol=false;
+  
+  for(int i = 0;i<=scores.length-2;i++){
+    if(scores[i]<=scores[i+1]){
+      lol = true;
+    }
+    else{
+      return false;
+    }
+  }
+  return lol;
+}

@@ -1,0 +1,11 @@
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  if((speed>=81&&isBirthday==false)||(isBirthday&&speed>85)){
+    return 2;
+  }
+  else if ((speed>=61&&speed<=80&&isBirthday==false)||(isBirthday&&speed<=85&&speed>=66)){
+    return 1;
+  }
+  else {
+    return 0;
+  }
+}

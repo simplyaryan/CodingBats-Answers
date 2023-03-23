@@ -1,0 +1,15 @@
+public boolean scoresClump(int[] scores) {
+  int lol = 0;
+  boolean lol1 =false;
+  for(int i = 0;i<=scores.length-3;i++){
+    lol = (scores[i+2]-scores[i+1])+(scores[i+1]-scores[i]);
+    if(lol<=2){
+    return   true;
+      
+    }
+    else{
+     lol1 = false;
+    }
+  }
+  return lol1; 
+}

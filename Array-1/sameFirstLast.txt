@@ -1,0 +1,7 @@
+public boolean sameFirstLast(int[] nums) {
+  boolean lol = false;
+  if(nums.length>=1&&nums[0]==nums[nums.length-1]){
+    lol=true;
+  }
+  return lol;
+}

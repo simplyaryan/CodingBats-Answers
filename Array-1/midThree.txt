@@ -1,0 +1,11 @@
+public int[] midThree(int[] nums) {
+  int[] lol = new int[3];
+  int middle = (nums.length-1)/2;
+  
+  lol[0]=nums[middle-1];
+  lol[1]=nums[middle];
+  lol[2]=nums[middle+1];
+  
+  return lol;
+  
+}
