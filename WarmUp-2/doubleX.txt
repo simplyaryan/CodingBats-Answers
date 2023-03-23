@@ -1,0 +1,16 @@
+boolean doubleX(String str) {
+  int index = str.indexOf("x");
+  if(str.length()-1==index){
+    return false;
+  }
+  else if (index == -1){
+    return false;
+  }
+  else if(str.substring(index,index+1).equals(str.substring(index+1,index+2))){
+    return true;
+  }
+  
+  else{
+    return false;
+  }
+}

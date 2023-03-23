@@ -1,0 +1,12 @@
+public int diff21(int n) {
+  int x = n-21;
+  x = Math.abs(x);
+  
+  if(n>=21){
+    x=x*2;
+    return x;
+  }
+  else {
+    return x;
+  }
+}

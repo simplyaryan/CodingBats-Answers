@@ -1,0 +1,14 @@
+public boolean has271(int[] nums) {
+  int temp;
+  int correct;
+  int temp2;
+  for(int i = 0;i<=nums.length-3;i++){
+    temp = nums[i];
+    temp2 = nums[i+2];
+    correct = temp-1;
+    if(nums[i+1]==temp+5&&Math.abs(temp2-correct)<=2){
+      return true;
+    }
+  }
+  return false;
+}

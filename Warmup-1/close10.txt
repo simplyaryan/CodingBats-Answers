@@ -1,0 +1,13 @@
+public int close10(int a, int b) {
+  int lol = Math.abs(a-10);
+  int lol2 = Math.abs(b-10);
+  if (lol==lol2){
+    return 0 ;
+  }
+  else if (lol<lol2){
+    return a;
+  }
+  else{
+    return b;
+  }
+}

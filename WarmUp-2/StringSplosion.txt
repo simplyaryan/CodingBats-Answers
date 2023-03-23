@@ -1,0 +1,7 @@
+public String stringSplosion(String str) {
+  String result = "";
+  for(int i = str.length();i>0;i--){
+    result = str.substring(0,i)+result;
+  }
+  return result;
+}

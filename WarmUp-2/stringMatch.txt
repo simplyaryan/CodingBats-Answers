@@ -1,0 +1,16 @@
+public int stringMatch(String a, String b) {
+  int count = 0;
+  int lol = 0;
+  if(a.length()<b.length()){
+    lol=a.length();
+  }
+  else{
+    lol = b.length();
+  }
+  for(int i=0;i<=lol-2;i++){
+    if(a.substring(i,i+2).equals(b.substring(i,i+2))){
+      count++;
+    }
+  }
+  return count;
+}

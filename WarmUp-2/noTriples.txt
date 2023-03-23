@@ -1,0 +1,10 @@
+public boolean noTriples(int[] nums) {
+  int temp ;
+  for(int i = 0;i<=nums.length-3;i++){
+    temp = nums[i];
+    if(nums[i]==temp&&nums[i+1]==temp&&nums[i+2]==temp){
+      return false;
+    }
+  }
+  return true;
+}

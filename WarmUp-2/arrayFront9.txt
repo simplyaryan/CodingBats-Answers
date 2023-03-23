@@ -1,0 +1,11 @@
+public boolean arrayFront9(int[] nums) {
+  boolean lol= false;
+  
+  for(int i = 0 ;i<=nums.length-1;i++){
+    if(nums[i]==9&&i<4){
+      lol = true;
+      return lol;
+    }
+  }
+  return lol;
+}

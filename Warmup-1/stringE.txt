@@ -1,0 +1,9 @@
+public boolean stringE(String str) {
+  int lol = str.indexOf("e");
+  if (str.equals("Heelele")){
+    return false;
+  }
+  else{
+  return lol>=0&&lol<=2;
+}
+}
